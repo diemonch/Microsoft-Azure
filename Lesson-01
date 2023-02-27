@@ -19,4 +19,21 @@ VM Scale Set: ( Sclabality )
 Spot Instances:
       Requesting for a low-priced Vms at a discounted rate. If no one else is using such VMs, it will be released. Usually
       it is best suited for low-priority batch jobs that runs for a day or two.
+ 
+ Instance Type and Size:
+      Select appropriate VM size from 568 Options provided by Microsoft. 
+      
+ Encryption:
+      1- Encryption is at rest by defdault with platform managed key.
+      2- with customer managed key
+      3- Double encryption with both customer-managed and platform managed key
+ Connect to VMs:
+      - RDP usually Windows
+      - SSH usually for linux / Unix based
+      - Bastion is a Java ( Jump service) based service to connect securely to a VM
+  Azure Resource Manager (ARM)
+      - It is a deployment model ( it is an engine), where the interfaces uses this ARM to interact with the services.
+      - Bicep is a new tool helps to create a ARM Template.
+      
+      
       
