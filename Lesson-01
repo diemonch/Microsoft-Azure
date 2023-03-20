@@ -1,39 +1,10 @@
-Compure Solutions
---------------------
-Cloud Platform manages the underlying infrastructure
-Can terminate the services if we dont want to use those services
-Pay per usage 
+Shared responsibility
+----
+https://learn.microsoft.com/en-us/azure/security/fundamentals/shared-responsibility
 
-VMs Redundancy:
-Availability Set:
-      VMs designated in Availability sets are related. They should be distributed in across the fault domains.
-      not same machine or rack. ensuring far enough apart. Copies of each other must be seperated far.
-      
-Availability Zone:
-      Roughly be equated to Data centers. Each region consists of 3 or more DCs which are in different locations. 
-      Manulally deploy into a specific DC. Eliminates building level outages.
-      
-VM Scale Set: ( Sclabality )
-      Automcatically scales in and out depends on the demand.
+High Availability: remain operational even during palnned and unplanned outages
+High Uptime. 99.99%
+Scalability: Ability to add/remove resources
+ - to adopt to changing usage patterns
+ - to handle high amount of traffic with out changing the system design/ code
 
-Spot Instances:
-      Requesting for a low-priced Vms at a discounted rate. If no one else is using such VMs, it will be released. Usually
-      it is best suited for low-priority batch jobs that runs for a day or two.
- 
- Instance Type and Size:
-      Select appropriate VM size from 568 Options provided by Microsoft. 
-      
- Encryption:
-      1- Encryption is at rest by defdault with platform managed key.
-      2- with customer managed key
-      3- Double encryption with both customer-managed and platform managed key
- Connect to VMs:
-      - RDP usually Windows
-      - SSH usually for linux / Unix based
-      - Bastion is a Java ( Jump service) based service to connect securely to a VM
-  Azure Resource Manager (ARM)
-      - It is a deployment model ( it is an engine), where the interfaces uses this ARM to interact with the services.
-      - Bicep is a new tool helps to create a ARM Template.
-      
-      
-      
