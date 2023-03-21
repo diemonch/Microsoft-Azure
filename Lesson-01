@@ -7,4 +7,9 @@ High Uptime. 99.99%
 Scalability: Ability to add/remove resources
  - to adopt to changing usage patterns
  - to handle high amount of traffic with out changing the system design/ code
+ - verticle scallaing has an upper limit such as 96 vCPU, 384 GN memory. doesnt answer/fix the availability
+ - horizontal scalling - scalling in , out - adding more servers and resources, no limits to the scalling : complexity - load balancers
+Elasticity: ability to quickly scale up and down resources
 
+
+ 
